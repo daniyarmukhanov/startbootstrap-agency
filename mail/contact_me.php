@@ -20,7 +20,7 @@ $to = 'ceo@enterprise-c.kz'; // Add your email address inbetween the '' replacin
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: info@enterprise-c.kz"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
+$headers .= "Reply-To: info@enterprise-c.kz";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
 ?>
